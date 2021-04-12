@@ -40,13 +40,13 @@ steps:
   displayName: 'Download secure file PFX'
   name: app_pfx
   inputs:
-    secureFile: '99ca122a-939c-491f-9ea3-bb7ad1819ec1'
+    secureFile: 'Cloud3D-codesign.pfx'
 
 - task: DownloadSecureFile@1
   displayName: 'Download secure file SNK'
   name: snk
   inputs:
-    secureFile: '61ad38e7-05ff-4421-aea8-e3241b75c7a1'
+    secureFile: 'Cloud3D-codesign.snk'
 
 - task: PowerShell@2
   displayName: 'Install Cert'
@@ -65,7 +65,6 @@ steps:
     restoreSolution: '$(solution)'
     feedsToUse: 'config'
     includeNugetOrg: 'true'
-    externalFeedCredentials: 'github-czemacleod-packages'
 
 - task: VSBuild@1
   inputs:
