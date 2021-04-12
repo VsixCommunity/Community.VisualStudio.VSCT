@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <Symbols>
+    <GuidSymbol name="guidPackage" value="{05271709-8845-42fb-9d10-621cc8cffc5d}" />
+
+    <GuidSymbol name="guidTestExtensionPackageCmdSet" value="{cb765f49-fc35-4c14-93af-bb48ca4f2ce3}">
+      <IDSymbol name="RunnerWindowCommandId" value="0x0100" />
+      <IDSymbol name="ThemeWindowCommandId" value="0x0101" />
+      <IDSymbol name="MultiInstanceWindowCommandId" value="0x0102" />
+    </GuidSymbol>
+  </Symbols>
+</CommandTable>

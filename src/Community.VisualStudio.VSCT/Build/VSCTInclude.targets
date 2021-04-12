@@ -1,0 +1,42 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+
+  <ItemGroup Condition="'$(EnableDefaultVSCTIncludeItems)'!='false'">
+    <!-- Migrate any None items (e.g. linked items from outside the project) -->
+    <VSCTInclude Include="@(None->HasMetadata('Extension')->WithMetadataValue('Extension','.vsct'))" Exclude="$(VSCTIncludeExclude);@(VSCTCompile)" />
+    <None Remove="@(VSCTInclude)" />
+    <!-- Scoop up any *.vsct items from the project that are not excluded -->
+    <VSCTInclude Include="**/*.vsct" Exclude="$(VSCTIncludeExclude);@(VSCTCompile);@(VSCTInclude)" />    
+  </ItemGroup>
+
+  <Target Name="CheckVSCTIncludes" BeforeTargets="VSCTCompile" Condition="'@(VSCTCompile)'!=''">
+    <ItemGroup>
+      <_Temporary Remove="@(_Temporary)" />
+      <_Temporary2 Remove="@(_Temporary2)" />
+      <_Temporary2 Include="@(VSCTInclude->'%(Filename)%(Extension)')">
+        <OriginalPath>%(Identity)</OriginalPath>
+      </_Temporary2>
+    </ItemGroup>
+    <XmlPeek XmlInputPath="%(VSCTCompile.Identity)" Query="ct:CommandTable/ct:Include/@href" Namespaces="&lt;Namespace Prefix='ct' Uri='http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable' /&gt;">
+      <Output TaskParameter="Result" ItemName="_Temporary"></Output>
+    </XmlPeek>
+    <XmlPeek XmlInputPath="%(VSCTInclude.Identity)" Query="ct:CommandTable/ct:Include/@href" Namespaces="&lt;Namespace Prefix='ct' Uri='http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable' /&gt;">
+      <Output TaskParameter="Result" ItemName="_Temporary"></Output>
+    </XmlPeek>
+    <ItemGroup>
+      <_Temporary2 Remove="@(_Temporary)" />
+    </ItemGroup>
+    <Warning Code="CVSTK001" File="%(_Temporary2.OriginalPath)" Text="No VSCTCompile file includes this VSCTInclude" Condition="'@(_Temporary2)'!=''" />
+    <Warning Code="CVSTK002" File="@(VSCTCompile)" Text="Add &lt;Include href=&quot;%(_Temporary2.Identity)&quot; /&gt;" Condition="'@(_Temporary2)'!=''" />
+  </Target>
+
+  <Target Name="AddVSCTIncludesPaths" BeforeTargets="VSCTCompile">
+    <ItemGroup>
+      <_Temporary Remove="@(_Temporary)" />
+      <_Temporary Include="@(VSCTInclude->'%(RootDir)%(Directory)')" />
+    </ItemGroup>
+    <RemoveDuplicates Inputs="@(_Temporary)">
+      <Output TaskParameter="Filtered" ItemName="VSCTIncludePath"/>
+    </RemoveDuplicates>
+  </Target>
+
+</Project>

@@ -1,0 +1,24 @@
+<Project>
+  <PropertyGroup>
+    <MSBuildTreatWarningsAsErrors>true</MSBuildTreatWarningsAsErrors>
+    <LangVersion>Latest</LangVersion>
+    <PackageOutputPath Condition="'$(PackageOutputPath)'==''">$(MSBuildThisFileDirectory)..\_Packages\</PackageOutputPath>
+    <NoWarn>$(NoWarn);NU5128;SA0001</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Authors>VSIX Community;Cynthia Z E MacLeod</Authors>
+    <Owners>VSIX Community</Owners>
+    <Company>Cloud3D Ltd.</Company>
+    <Copyright>© 2021 Cloud3D Ltd. All rights reserved.</Copyright>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageLicensePath>$(MSBuildThisFileDirectory)..\$(PackageLicenseFile)</PackageLicensePath>
+    <PackageProjectUrl>https://github.com/CZEMacLeod/MSBuild.SDK.SystemWeb</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/VsixCommunity/Community.VisualStudio.VSCT</RepositoryUrl>
+    <RepositoryBranch>main</RepositoryBranch>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <PackageIcon>icon.png</PackageIcon>
+  </PropertyGroup>
+</Project>

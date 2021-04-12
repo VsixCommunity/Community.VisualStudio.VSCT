@@ -1,0 +1,4 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="VSGlobals.VSCT.props" />
+  <Import Project="VSCTInclude.props" />
+</Project>

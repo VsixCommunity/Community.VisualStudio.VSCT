@@ -1,0 +1,22 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <DefaultItemExcludes>$(DefaultItemExcludes);**/*.vsct</DefaultItemExcludes>
+  </PropertyGroup>
+  <ItemGroup Condition="'$(BuildingInsideVisualStudio)'=='true'">
+    <AvailableItemName Include="VSCTInclude" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <EnableDefaultVSCTIncludeItems Condition="'$(EnableDefaultVSCTIncludeItems)'==''">$(EnableDefaultItems)</EnableDefaultVSCTIncludeItems>
+    <VSCTIncludeExclude Condition="'$(VSCTIncludeExclude)'==''"></VSCTIncludeExclude><!-- Initialize the property -->
+  </PropertyGroup>
+
+  <ItemDefinitionGroup>
+    <VSCTInclude>
+      <Generator></Generator>
+      <Visible>true</Visible>
+      <InProject>true</InProject>
+    </VSCTInclude>
+  </ItemDefinitionGroup>
+
+</Project>

@@ -1,0 +1,22 @@
+<Project>
+  <Sdk Name="Microsoft.Build.CentralPackageVersions" Version="2.0.52" />
+
+  <PropertyGroup>
+    <!-- Full symbols so that unit test assertions have more info -->
+    <DebugType Condition=" '$(Configuration)' == 'Debug' ">Full</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(IsPackable)' == 'true'">
+    <None Include="Sdk\**"
+          Pack="true"
+          PackagePath="Sdk\" />
+    <None Include="README.md" Condition="Exists('ReadMe.md')" />
+    <None Include="$(MSBuildThisFileDirectory)\..\README.md" Condition="!Exists('ReadMe.md')" />
+    <None Include="$(PackageLicensePath)"
+          Pack="true"
+          PackagePath="$(PackageLicenseFile)"
+          Visible="false" />
+    <None Include="$(MSBuildThisFileDirectory)icon.png" Link="icon.png" Pack="true" PackagePath="" Visible="false" />
+  </ItemGroup>
+
+</Project>
