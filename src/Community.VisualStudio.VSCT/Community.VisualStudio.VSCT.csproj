@@ -8,7 +8,8 @@
       Adds a new item type `VSCTInclude` which ensures that the items path is added to `VSCTIncludePath` and gives a warning if you do _not_ include it in any `VSCTCompile` or `VSCTInclude` file.
       Provides a VSGlobal.vsct file which can be included in your VSCT file to enable human readable names for the guid and id entries from Visual Studio
     </Description>
-    <PackageTags>MSBuild;VSSDK;VSCT;Community;VSGlobals;BuildTools</PackageTags>    
+    <PackageTags>MSBuild;VSSDK;VSCT;Community;VSGlobals;BuildTools</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
