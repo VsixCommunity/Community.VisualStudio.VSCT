@@ -2,6 +2,7 @@
 
 Part of the [VSIX Community](https://github.com/VsixCommunity)
 
+[![Build Status](https://dev.azure.com/flexviews/Community.VisualStudio.VSCT/_apis/build/status/CZEMacLeod.Community.VisualStudio.VSCT?branchName=main)](https://dev.azure.com/flexviews/Community.VisualStudio.VSCT/_build/latest?definitionId=71&branchName=main)
 [![NuGet](https://img.shields.io/nuget/v/Community.VisualStudio.VSCT)](https://nuget.org/packages/Community.VisualStudio.Toolkit/)
 
 ## Summary
