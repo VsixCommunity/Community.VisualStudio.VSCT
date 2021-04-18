@@ -9,12 +9,11 @@
   <PropertyGroup>
     <Authors>VSIX Community;CZEMacLeod</Authors>
     <Owners>VSIX Community</Owners>
-    <Company>Cloud3D Ltd.</Company>
     <Copyright>© 2021 Cloud3D Ltd. All rights reserved.</Copyright>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <PackageLicensePath>$(MSBuildThisFileDirectory)..\$(PackageLicenseFile)</PackageLicensePath>
-    <PackageProjectUrl>https://github.com/CZEMacLeod/MSBuild.SDK.SystemWeb</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/VsixCommunity/Community.VisualStudio.VSCT</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/VsixCommunity/Community.VisualStudio.VSCT</RepositoryUrl>
     <RepositoryBranch>main</RepositoryBranch>
