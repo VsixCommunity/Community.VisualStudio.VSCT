@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
+    <Version>16.0</Version>
     <Authors>VSIX Community;CZEMacLeod</Authors>
     <Owners>VSIX Community</Owners>
     <Copyright>© 2021 Cloud3D Ltd. All rights reserved.</Copyright>
