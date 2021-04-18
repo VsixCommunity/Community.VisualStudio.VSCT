@@ -23,5 +23,5 @@ deploy:
     api_key:
       secure: 2LiTL6oY/0UkItVFZDP+iQqDsLl9BK9yM4rMyvbB9pL+/bXzzaerqFhR6NRmhRbs
     on:
-      branch: master
+      branch: main
       appveyor_repo_commit_message_extended: /\[release\]/
