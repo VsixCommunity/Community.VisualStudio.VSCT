@@ -125,6 +125,7 @@
       <IDSymbol name="ErrorListToolbar.MessageGroup" value="0x01D9" />
       <IDSymbol name="ErrorListToolbar.WarningGroup" value="0x01D8" />
       <IDSymbol name="Extensions" value="0x0091" />
+      <IDSymbol name="Extensions.RedirectionGroup" value="0x010A" />
       <IDSymbol name="Extensions.DefaultGroup" value="0x6000" />
       <IDSymbol name="File" value="0x0080" />
       <IDSymbol name="File.AccountSettingsGroup" value="0x0711" />
