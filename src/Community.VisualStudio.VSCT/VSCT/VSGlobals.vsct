@@ -75,13 +75,17 @@
       <IDSymbol name="BookmarksToolbar" value="0x0019" />
       <IDSymbol name="Build" value="0x008C" />
       <IDSymbol name="Build.CancelGroup" value="0x0283" />
+      <IDSymbol name="Build.CascadeGroup" value="0x0284" />
+      <IDSymbol name="Build.CompileGroup" value="0x028C" />
       <IDSymbol name="Build.MiscGroup" value="0x0282" />
+      <IDSymbol name="Build.ProjectPickerGroup" value="0x0288" />
       <IDSymbol name="Build.SelectionGroup" value="0x0281" />
       <IDSymbol name="Build.SolutionGroup" value="0x0280" />
       <IDSymbol name="BuildToolbar" value="0x000d" />
       <IDSymbol name="BuildToolbar.BuildGroup" value="0x01D2" />
       <IDSymbol name="ClassViewToolbar" value="0x0010" />
       <IDSymbol name="CodeWindow" value="0x0499" />
+      <IDSymbol name="CodeWindow.ContextMenu" value="0x040D" />
       <IDSymbol name="CodeWindow.AdvancedGroup" value="0x02D1" />
       <IDSymbol name="CodeWindow.AnnotationGroup" value="0x02D7" />
       <IDSymbol name="CodeWindow.AnnotationGroup.Submenu" value="0x02D6" />
@@ -108,8 +112,16 @@
       <IDSymbol name="Debug" value="0x0089" />
       <IDSymbol name="DebuggerToolbar" value="0x00006" />
       <IDSymbol name="DebuggerToolbar.DebuggerGroup" value="0x0200" />
+      <IDSymbol name="DocumentTab" value="0x042B" />
+      <IDSymbol name="DocumentTab.LocateGroup" value="0x01FB" />
+      <IDSymbol name="DocumentTab.PathOpsGroup" value="0x01ED" />
+      <IDSymbol name="DocumentTab.WindowOpsGroup" value="0x01EC" />
+      <IDSymbol name="DocumentTabWell" value="0x0740" />
+      <IDSymbol name="DocumentTabWell.DocWellOpsGroup" value="0x0742" />
+      <IDSymbol name="DocumentTabWell.FloatAllGroup" value="0x0743" />
       <IDSymbol name="Edit" value="0x0081" />
       <IDSymbol name="Edit.CutCopyGroup" value="0x012A" />
+      <IDSymbol name="Edit.CommandWellGroup" value="0x012E" />
       <IDSymbol name="Edit.FindGroup" value="0x012C" />
       <IDSymbol name="Edit.GoToGroup" value="0x012D" />
       <IDSymbol name="Edit.ObjectsGroup" value="0x0128" />
@@ -125,8 +137,9 @@
       <IDSymbol name="ErrorListToolbar.MessageGroup" value="0x01D9" />
       <IDSymbol name="ErrorListToolbar.WarningGroup" value="0x01D8" />
       <IDSymbol name="Extensions" value="0x0091" />
-      <IDSymbol name="Extensions.RedirectionGroup" value="0x010A" />
       <IDSymbol name="Extensions.DefaultGroup" value="0x6000" />
+      <IDSymbol name="Extensions.RedirectionGroup" value="0x010A" />
+      <IDSymbol name="Extensions.ReparentGroup" value="0x6001" />
       <IDSymbol name="File" value="0x0080" />
       <IDSymbol name="File.AccountSettingsGroup" value="0x0711" />
       <IDSymbol name="File.AddGroup" value="0x0111" />
@@ -149,11 +162,11 @@
       <IDSymbol name="File.OpenFileGroup" value="0x011B" />
       <IDSymbol name="File.OpenProjectGroup" value="0x011A" />
       <IDSymbol name="File.PrintGroup" value="0x0114" />
-      <IDSymbol name="File.RecentlyUsedv" value="0x0115" />
-      <IDSymbol name="File.RecentlyUsedv.Files" value="0x030C" />
-      <IDSymbol name="File.RecentlyUsedv.Files.DefaultGroup" value="0x011E" />
-      <IDSymbol name="File.RecentlyUsedv.Projects" value="0x030D" />
-      <IDSymbol name="File.RecentlyUsedv.Projects.DefaultGroup" value="0x011F" />
+      <IDSymbol name="File.RecentlyUsed" value="0x0115" />
+      <IDSymbol name="File.RecentlyUsed.Files" value="0x030C" />
+      <IDSymbol name="File.RecentlyUsed.Files.DefaultGroup" value="0x011E" />
+      <IDSymbol name="File.RecentlyUsed.Projects" value="0x030D" />
+      <IDSymbol name="File.RecentlyUsed.Projects.DefaultGroup" value="0x011F" />
       <IDSymbol name="File.RenameGroup" value="0x0113" />
       <IDSymbol name="File.SaveGroup" value="0x0112" />
       <IDSymbol name="File.SolutionGroup" value="0x0118" />
@@ -175,15 +188,19 @@
       <IDSymbol name="FolderNode" value="0x0431" />
       <IDSymbol name="FolderNode.AddGroup" value="0x02A3" />
       <IDSymbol name="FolderNode.ExploreGroup" value="0x0267" />
+      <IDSymbol name="FolderNode.TransferGroup" value="0x0230" />
+      <IDSymbol name="Format" value="0x008A" />
       <IDSymbol name="Help" value="0x0088" />
       <IDSymbol name="Help.AboutGroup" value="0x016B" />
-      <IDSymbol name="Help.AccessibilityGroup" value="0x016C" />
+      <IDSymbol name="Help.AccessibilityGroup" value="0x016D" />
       <IDSymbol name="Help.SupportGroup" value="0x016A" />
       <IDSymbol name="ItemNode" value="0x0430" />
       <IDSymbol name="ItemNode.ExploreGroup" value="0x02E6" />
       <IDSymbol name="ItemNode.OpenGroup" value="0x0209" />
+      <IDSymbol name="ItemNode.PrintGroup" value="0x020D" />
       <IDSymbol name="ItemNode.PropertiesGroup" value="0x020E" />
       <IDSymbol name="ItemNode.RenameGroup" value="0x0210" />
+      <IDSymbol name="ItemNode.SaveGroup" value="0x020C" />
       <IDSymbol name="ItemNode.TransferGroup" value="0x020A" />
       <IDSymbol name="ItemNode.ViewBrowserGroup" value="0x020B" />
       <IDSymbol name="ItemNode.ViewObjectGroup" value="0x0208" />
@@ -201,6 +218,7 @@
       <IDSymbol name="OutputWindowToolbar.GoToGroup" value="0x0294" />
       <IDSymbol name="OutputWindowToolbar.NextPrevGroup" value="0x0295" />
       <IDSymbol name="OutputWindowToolbar.SelectGroup" value="0x0293" />
+      <IDSymbol name="OutputWindowToolbar.TimestampGroup" value="0x074C" />
       <IDSymbol name="OutputWindowToolbar.WordWrapGroup" value="0x029F" />
       <IDSymbol name="Project" value="0x0083" />
       <IDSymbol name="Project.AddGroup" value="0x0140" />
@@ -220,10 +238,11 @@
       <IDSymbol name="Project.Web2Group" value="0x0149" />
       <IDSymbol name="ProjectNode" value="0x0402" />
       <IDSymbol name="ProjectNode.AddGroup" value="0x0202" />
-      <IDSymbol name="ProjectNode.AddGroup.Submenu" value="0x0202" />
+      <IDSymbol name="ProjectNode.AddGroup.Submenu" value="0x0352" />
       <IDSymbol name="ProjectNode.AddGroup.Submenu.FormsGroup" value="0x02A0" />
       <IDSymbol name="ProjectNode.AddGroup.Submenu.ItemsGroup" value="0x0203" />
       <IDSymbol name="ProjectNode.AddGroup.Submenu.MiscGroup" value="0x02A1" />
+      <IDSymbol name="ProjectNode.AddReferencesGroup" value="0x02B9" />
       <IDSymbol name="ProjectNode.BuildGroup" value="0x0206" />
       <IDSymbol name="ProjectNode.BuildDependenciesGroup" value="0x02E0" />
       <IDSymbol name="ProjectNode.DebugGroup" value="0x0204" />
@@ -232,6 +251,7 @@
       <IDSymbol name="ProjectNode.MultiProjectBuildGroup" value="0x0201" />
       <IDSymbol name="ProjectNode.PropertiesGroup" value="0x0214" />
       <IDSymbol name="ProjectNode.RenameGroup" value="0x0211" />
+      <IDSymbol name="ProjectNode.SaveGroup" value="0x0213" />
       <IDSymbol name="ProjectNode.SourceControlGroup" value="0x0216" />
       <IDSymbol name="ProjectNode.StartGroup" value="0x0205" />
       <IDSymbol name="ProjectNode.TransferGroup" value="0x0207" />
@@ -239,13 +259,15 @@
       <IDSymbol name="ReferencesNode" value="0x0450" />
       <IDSymbol name="ReferencesNode.AddGroup" value="0x02A4" />
       <IDSymbol name="ReferencesNode.TransferGroup" value="0x02A5" />
+      <IDSymbol name="Refactoring" value="0x008F" />
       <IDSymbol name="SnippetsToolbar" value="0x002D" />
       <IDSymbol name="SnippetsToolbar.PropertyGroup" value="0x02C8" />
       <IDSymbol name="SnippetsToolbar.ReferenceGroup" value="0x02C9" />
       <IDSymbol name="SnippetsToolbar.ReplaceGroup" value="0x02CA" />
       <IDSymbol name="SolutionExplorerToolbar" value="0x0003"/>
-      <IDSymbol name="SolutionExplorerToolbar.NavigationGroup" value="0x0730"/>
       <IDSymbol name="SolutionExplorerToolbar.FiltersGroup" value="0x0738"/>
+      <IDSymbol name="SolutionExplorerToolbar.NavigationGroup" value="0x0730"/>
+      <IDSymbol name="SolutionExplorerToolbar.NewViewGroup" value="0x0731"/>
       <IDSymbol name="SolutionFolder" value="0x0414" />
       <IDSymbol name="SolutionFolder.AddGroup" value="0x0264" />
       <IDSymbol name="SolutionFolder.AddGroup.AddMenu" value="0x0357" />
@@ -254,6 +276,7 @@
       <IDSymbol name="SolutionFolder.UnloadReloadGroup" value="0x023A" />
       <IDSymbol name="SolutionFolder.BuildGroup" value="0x0263" />
       <IDSymbol name="SolutionNode" value="0x0413" />
+      <IDSymbol name="SolutionNode.AddGroup" value="0x0233" />
       <IDSymbol name="SolutionNode.AddGroup.AddMenu" value="0x0350" />
       <IDSymbol name="SolutionNode.AddGroup.AddMenu.AddItemGroup" value="0x021E" />
       <IDSymbol name="SolutionNode.AddGroup.AddMenu.AddProjectGroup" value="0x021D" />
@@ -263,6 +286,7 @@
       <IDSymbol name="SolutionNode.ExploreGroup" value="0x0265" />
       <IDSymbol name="SolutionNode.PropertiesGroup" value="0x0215" />
       <IDSymbol name="SolutionNode.RenameGroup" value="0x0212" />
+      <IDSymbol name="SolutionNode.SaveGroup" value="0x0218" />
       <IDSymbol name="SolutionNode.SourceControlGroup" value="0x0217" />
       <IDSymbol name="SolutionNode.StartGroup" value="0x021B" />
       <IDSymbol name="SolutionNode.TransferGroup" value="0x021C" />
@@ -280,8 +304,8 @@
       <IDSymbol name="StandardToolbar.SearchGroup" value="0x0177" />
       <IDSymbol name="StandardToolbar.UndoRedoGroup" value="0x0173" />
       <IDSymbol name="StandardToolbar.WindowsGroup" value="0x0175" />
-      <IDSymbol name="TaskListToolbart" value="0x002a" />
-      <IDSymbol name="TaskListToolbart.ProviderListGroup" value="0x01D1" />
+      <IDSymbol name="TaskListToolbar" value="0x002a" />
+      <IDSymbol name="TaskListToolbar.ProviderListGroup" value="0x01D1" />
       <IDSymbol name="TextEditorToolbar" value="0x000e" />
       <IDSymbol name="TextEditorToolbar.CommentGroup" value="0x0552" />
       <IDSymbol name="TextEditorToolbar.CompletionGroup" value="0x0550" />
@@ -298,9 +322,10 @@
       <IDSymbol name="UserTasksToolbar" value="0x002b" />
       <IDSymbol name="UserTasksToolbar.EditGroup" value="0x01D3" />
       <IDSymbol name="View" value="0x0082" />
-      <IDSymbol name="View.ArcitectureWindowsGroup" value="0x0720" />
+      <IDSymbol name="View.ArchitectureWindowsGroup" value="0x0720" />
       <IDSymbol name="View.BrowserGroup" value="0x0130" />
       <IDSymbol name="View.CodeGroup" value="0x0133" />
+      <IDSymbol name="View.CommandWellGroup" value="0x013C" />
       <IDSymbol name="View.DefineViewsGroup" value="0x0134" />
       <IDSymbol name="View.DevWindowsGroup" value="0x0723" />
       <IDSymbol name="View.DevWindowsGroup.FindResults.Group" value="0x0724" />
@@ -310,7 +335,7 @@
       <IDSymbol name="View.DevWindowsGroup.OtherWindows.Group3" value="0x01A1" />
       <IDSymbol name="View.DevWindowsGroup.OtherWindows.Group4" value="0x01A2" />
       <IDSymbol name="View.DevWindowsGroup.OtherWindows.Group5" value="0x01A3" />
-      <IDSymbol name="View.DevWindowsGroup.OtherWindows.Group6" value="0x01A7" />
+      <IDSymbol name="View.DevWindowsGroup.OtherWindows.Group6" value="0x01A4" />
       <IDSymbol name="View.ExplorerWindowsGroup" value="0x0721" />
       <IDSymbol name="View.LinksGroup" value="0x013B" />
       <IDSymbol name="View.NavigateGroup" value="0x0137" />
@@ -328,8 +353,12 @@
       <IDSymbol name="Window.LayoutGroup" value="0x0164" />
       <IDSymbol name="Window.LayoutListGroup" value="0x0165" />
       <IDSymbol name="Window.ListGroup" value="0x0162" />
+      <IDSymbol name="Window.MoveGroup" value="0x01FA" />
+      <IDSymbol name="Window.MoveSubmenu" value="0x040A" />
+      <IDSymbol name="Window.MoveSubmenu.TileGroup" value="0x01EA" />
       <IDSymbol name="Window.NavigationGroup" value="0x0163" />
       <IDSymbol name="Window.NewGroup" value="0x0160" />
+      <IDSymbol name="Window.SplitGroup" value="0x0167" />
       <IDSymbol name="Window.TabOrientationGroup" value="0x0166" />
     </GuidSymbol>
   </Symbols>
