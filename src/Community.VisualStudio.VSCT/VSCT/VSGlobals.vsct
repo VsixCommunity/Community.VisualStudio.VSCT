@@ -105,6 +105,10 @@
     </GuidSymbol>
 
     <GuidSymbol name="VSMainMenu" value="{d309f791-903f-11d0-9efc-00a0c911004f}">
+      <IDSymbol name="AnalyzerReferenceFolder" value="0x04AB" />
+      <IDSymbol name="AnalyzerReferenceNode" value="0x04AC" />
+      <IDSymbol name="AssemblyReferenceFolder" value="0x04A1" />
+      <IDSymbol name="AssemblyReferenceFolder.ManageGroup" value="0x02F2" />
       <IDSymbol name="BookmarksToolbar" value="0x0019" />
       <IDSymbol name="Build" value="0x008C" />
       <IDSymbol name="Build.CancelGroup" value="0x0283" />
@@ -141,10 +145,23 @@
       <IDSymbol name="CodeWindow.SnippetsGroup.Submenu" value="0x02D3" />
       <IDSymbol name="CodeWindow.SnippetsGroup.Submenu.SnippetsGroup" value="0x02D2" />
       <IDSymbol name="CodeWindow.TextEditGroup" value="0x01C0" />
+      <IDSymbol name="ComReferenceFolder" value="0x04A4" />
+      <IDSymbol name="ComReferenceFolder.ManageGroup" value="0x02F3" />
+      <IDSymbol name="ComReferenceNode" value="0x04A5" />
+      <IDSymbol name="CrossProject.MultiFolder" value="0x041C" />
+      <IDSymbol name="CrossProject.MultiItem" value="0x0419" />
+      <IDSymbol name="CrossProject.MultiProject" value="0x0418" />
+      <IDSymbol name="CrossProject.MultiProjectFolder" value="0x041D" />
+      <IDSymbol name="CrossProject.ProjectItem" value="0x0417" />
+      <IDSymbol name="CrossProject.SolutionItem" value="0x0416" />
+      <IDSymbol name="CrossProject.SolutionProject" value="0x0415" />
       <IDSymbol name="DataToolbar" value="0x0012" />
       <IDSymbol name="Debug" value="0x0089" />
       <IDSymbol name="DebuggerToolbar" value="0x0006" />
       <IDSymbol name="DebuggerToolbar.DebuggerGroup" value="0x0200" />
+      <IDSymbol name="DependencyTarget" value="0x04A0" />
+      <IDSymbol name="DependencyTarget.ManageGroup" value="0x02F0" />
+      <IDSymbol name="DependencyTarget.ReferenceManageGroup" value="0x02F1" />
       <IDSymbol name="DocumentTab" value="0x042B" />
       <IDSymbol name="DocumentTab.LocateGroup" value="0x01FB" />
       <IDSymbol name="DocumentTab.PathOpsGroup" value="0x01ED" />
@@ -161,6 +178,7 @@
       <IDSymbol name="Edit.PasteGroup" value="0x012F" />
       <IDSymbol name="Edit.SelectGroup" value="0x012B" />
       <IDSymbol name="Edit.UndoRedoGroup" value="0x0129" />
+      <IDSymbol name="ErrorCorrection" value="0x0480" />
       <IDSymbol name="ErrorListToolbar" value="0x002C" />
       <IDSymbol name="ErrorListToolbar.BuildGroup" value="0x01DC" />
       <IDSymbol name="ErrorListToolbar.ClearFilterGroup" value="0x01DD" />
@@ -203,6 +221,7 @@
       <IDSymbol name="File.RenameGroup" value="0x0113" />
       <IDSymbol name="File.SaveGroup" value="0x0112" />
       <IDSymbol name="File.SolutionGroup" value="0x0118" />
+      <IDSymbol name="FindAllReferencesWindow" value="0x0454" />
       <IDSymbol name="FindAllReferencesToolbar" value="0x000A" />
       <IDSymbol name="FindAllReferencesToolbar.CommonGroup" value="0x026C" />
       <IDSymbol name="FindAllReferencesToolbar.LockWinGroup" value="0x026E" />
@@ -223,6 +242,8 @@
       <IDSymbol name="FolderNode.ExploreGroup" value="0x0267" />
       <IDSymbol name="FolderNode.TransferGroup" value="0x0230" />
       <IDSymbol name="Format" value="0x008A" />
+      <IDSymbol name="FrameworkReferenceFolder" value="0x04A9" />
+      <IDSymbol name="FrameworkReferenceNode" value="0x04AA" />
       <IDSymbol name="Help" value="0x0088" />
       <IDSymbol name="Help.AboutGroup" value="0x016B" />
       <IDSymbol name="Help.AccessibilityGroup" value="0x016D" />
@@ -253,6 +274,10 @@
       <IDSymbol name="OutputWindowToolbar.SelectGroup" value="0x0293" />
       <IDSymbol name="OutputWindowToolbar.TimestampGroup" value="0x074C" />
       <IDSymbol name="OutputWindowToolbar.WordWrapGroup" value="0x029F" />
+      <IDSymbol name="PackageReferenceFolder" value="0x04A2" />
+      <IDSymbol name="PackageReferenceNode" value="0x04A3" />
+      <IDSymbol name="PeekResult" value="0x0739" />
+      <IDSymbol name="PreviewChanges" value="0x06D1" />
       <IDSymbol name="Project" value="0x0083" />
       <IDSymbol name="Project.AddGroup" value="0x0140" />
       <IDSymbol name="Project.AddCodeGroup" value="0x0145" />
@@ -289,14 +314,22 @@
       <IDSymbol name="ProjectNode.StartGroup" value="0x0205" />
       <IDSymbol name="ProjectNode.TransferGroup" value="0x0207" />
       <IDSymbol name="ProjectNode.UnloadReloadGroup" value="0x023A" />
+      <IDSymbol name="ProjectReferenceFolder" value="0x04A6" />
+      <IDSymbol name="ProjectReferenceFolder.ManageGroup" value="0x02F4" />
+      <IDSymbol name="ProjectReferenceNode" value="0x04A7" />
       <IDSymbol name="ReferencesNode" value="0x0450" />
       <IDSymbol name="ReferencesNode.AddGroup" value="0x02A4" />
       <IDSymbol name="ReferencesNode.TransferGroup" value="0x02A5" />
+      <IDSymbol name="ReferenceNode" value="0x0451" />
       <IDSymbol name="Refactoring" value="0x008F" />
       <IDSymbol name="SnippetsToolbar" value="0x002D" />
       <IDSymbol name="SnippetsToolbar.PropertyGroup" value="0x02C8" />
       <IDSymbol name="SnippetsToolbar.ReferenceGroup" value="0x02C9" />
       <IDSymbol name="SnippetsToolbar.ReplaceGroup" value="0x02CA" />
+      <IDSymbol name="SdkReferenceFolder" value="0x04AD" />
+      <IDSymbol name="SdkReferenceFolder.ManageGroup" value="0x02F5" />
+      <IDSymbol name="SdkReferenceNode" value="0x04AE" />
+      <IDSymbol name="SharedProjectReferenceNode" value="0x04A8" />
       <IDSymbol name="SolutionExplorerToolbar" value="0x0003" />
       <IDSymbol name="SolutionExplorerToolbar.FiltersGroup" value="0x0738" />
       <IDSymbol name="SolutionExplorerToolbar.NavigationGroup" value="0x0730" />
@@ -352,6 +385,10 @@
       <IDSymbol name="Tools.OptionsGroup" value="0x015A" />
       <IDSymbol name="Tools.Other2Group" value="0x015B" />
       <IDSymbol name="Tools.SnippetsGroup" value="0x3E95" />
+      <IDSymbol name="TransitiveAssemblyReferenceNode" value="0x04B1" />
+      <IDSymbol name="TransitiveDependencyNode" value="0x04B0" />
+      <IDSymbol name="TransitivePackageReferenceNode" value="0x04B2" />
+      <IDSymbol name="TransitiveProjectReferenceNode" value="0x04B3" />
       <IDSymbol name="UserTasksToolbar" value="0x002B" />
       <IDSymbol name="UserTasksToolbar.EditGroup" value="0x01D3" />
       <IDSymbol name="View" value="0x0082" />
