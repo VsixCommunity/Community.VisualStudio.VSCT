@@ -2,7 +2,12 @@
 <CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable">
 
   <!--
-  Based on $(VsInstallDir)\VSSDK\VisualStudioIntegration\Common\Inc\vsshlids.h
+  Based on:
+    $(VsInstallDir)\VSSDK\VisualStudioIntegration\Common\Inc\vsshlids.h
+    $(VsInstallDir)\VSSDK\VisualStudioIntegration\Common\Inc\ShellCmdPlace.vsct
+    $(VsInstallDir)\VSSDK\VisualStudioIntegration\Common\Inc\vsdebugguids.h
+    $(VsInstallDir)\VSSDK\VisualStudioIntegration\Common\Inc\VsDbgCmd.h
+    $(VsInstallDir)\VSSDK\VisualStudioIntegration\Common\Inc\VsDbgCmdPlace.VSCT
   Report bugs and suggestions at https://github.com/madskristensen/Community.VisualStudio.Toolkit
   
   To use this file, add <Include href="VSGlobals.vsct"/> to the top of your .vsct file.Then use
@@ -39,6 +44,7 @@
       <IDSymbol name="Edit.LanguageInfoGroup.Intellisense.CommandsGroup" value="0x3E94" />
       <IDSymbol name="Edit.LanguageInfoGroup.Outlining" value="0x3EA1" />
       <IDSymbol name="Edit.LanguageInfoGroup.Outlining.CommandsGroup" value="0x3E90" />
+      <IDSymbol name="Edit.LanguageInfoGroup.Outlining.CascadeOutlining" value="0x0305" />
       <IDSymbol name="Edit.PasteGroup.Special" value="0x3EA4" />
     </GuidSymbol>
 
@@ -69,6 +75,34 @@
     <GuidSymbol name="VSNuGet" value="{C0D88179-5D25-4982-BFE6-EC5FD59AC103}">
       <IDSymbol name="Tools.Other2Group.NuGet" value="0x100" />
       <IDSymbol name="Tools.Other2Group.NuGet.ToolsGroup" value="0x200" />
+    </GuidSymbol>
+
+    <GuidSymbol name="VSDebugger" value="{C9DD4A58-47FB-11D2-83E7-00C04F9902C1}">
+      <!-- Debug menu (top-level, parented under VSMainMenu IDG_VS_MM_BUILDDEBUGRUN) -->
+      <IDSymbol name="Debug" value="0x0401" />
+      <IDSymbol name="Debug.BreakpointsGroup" value="0x0007" />
+      <IDSymbol name="Debug.ExecutionGroup" value="0x0004" />
+      <IDSymbol name="Debug.SteppingGroup" value="0x0005" />
+      <IDSymbol name="Debug.WatchGroup" value="0x0006" />
+      <IDSymbol name="Debug.WindowsGroup" value="0x0009" />
+      <!-- Debug > Windows submenu -->
+      <IDSymbol name="Debug.WindowsGroup.Windows" value="0x0402" />
+      <IDSymbol name="Debug.WindowsGroup.Windows.ConsoleGroup" value="0x0132" />
+      <IDSymbol name="Debug.WindowsGroup.Windows.ContextGroup" value="0x0117" />
+      <IDSymbol name="Debug.WindowsGroup.Windows.DisasmGroup" value="0x0118" />
+      <IDSymbol name="Debug.WindowsGroup.Windows.GeneralGroup" value="0x0002" />
+      <IDSymbol name="Debug.WindowsGroup.Windows.InspectGroup" value="0x0116" />
+      <!-- Debug toolbar -->
+      <IDSymbol name="DebugToolbar" value="0x0421" />
+      <IDSymbol name="DebugToolbar.ExecutionGroup" value="0x011B" />
+      <IDSymbol name="DebugToolbar.SteppingGroup" value="0x0011" />
+      <IDSymbol name="DebugToolbar.WatchGroup" value="0x0025" />
+      <IDSymbol name="DebugToolbar.WindowsGroup" value="0x011A" />
+      <!-- Debug Location toolbar -->
+      <IDSymbol name="DebugLocationToolbar" value="0x0420" />
+      <IDSymbol name="DebugLocationToolbar.ContextGroup" value="0x0027" />
+      <!-- Code window debug breakpoint group -->
+      <IDSymbol name="CodeWindow.DebugBreakpointGroup" value="0x0230" />
     </GuidSymbol>
 
     <GuidSymbol name="VSMainMenu" value="{d309f791-903f-11d0-9efc-00a0c911004f}">
